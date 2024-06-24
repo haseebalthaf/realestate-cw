@@ -1,0 +1,41 @@
+/* Modal container alligning the modal card and adding a semi transparent background around it */
+.modalContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Card holding the content inside the Modal */
+.modalContent {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  max-width: 800px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Button style for closing Modal */
+.modalContent button {
+    border: none;
+    background: none;
+    padding: 0.5rem;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    transition: 0.5s;
+    margin: 0.25rem;
+    border: 1px solid black;
+}
+
+/* Modal Button Hover Effect */
+.modalContent button:hover {
+  background: #c2c2c2;
+  transition: 0.5s;
+}

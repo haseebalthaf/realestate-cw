@@ -1,0 +1,179 @@
+{
+  "properties": [
+    {
+      "id": "prop1",
+      "type": "House",
+      "bedrooms": 3,
+      "price": 750000,
+      "tenure": "Freehold",
+      "description": "Attractive three bedroom semi-detached family home situated within 0.5 miles of Petts Wood station with fast trains to London and within easy walking distance of local shops, schools, bus routes and National Trust woodland. The property comprises; two receptions, fitted 18'9 x 10'1 kitchen/breakfast room and conservatory. The property also benefits from having a utility room and cloakroom. To the first floor there are three bedrooms and a family bathroom with separate WC. Additional features include double glazing, gas central heating and a well presented interior...",
+      "location": "Petts Wood Road, Petts Wood, Orpington",
+      "picture": "../public/properties/prop1.png",
+      "interior": [
+        "../public/prop1/1.jpeg",
+        "../public/prop1/2.jpeg",
+        "../public/prop1/3.jpeg",
+        "../public/prop1/4.jpeg",
+        "../public/prop1/5.jpeg",
+        "../public/prop1/6.jpeg"
+      ],
+      "floorplan": "../public/floorplan/fp1.png",
+      "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.437046944733!2d-0.19888022312106254!3d51.50519741086397!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48760ffa64329973%3A0xe378aeb92a844d68!2sCampden%20House%2C%2029%20Sheffield%20Terrace%2C%20London%20W8%207NE%2C%20UK!5e0!3m2!1sen!2slk!4v1704828409866!5m2!1sen!2slk",
+      "added": {
+        "month": "October",
+        "day": 12,
+        "year": 2022
+      }
+    },
+    {
+      "id": "prop2",
+      "type": "Flat",
+      "bedrooms": 2,
+      "price": 399995,
+      "tenure": "Freehold",
+      "description": "Presented in excellent decorative order throughout is this two double bedroom, two bathroom, garden flat. <br>The modern fitted kitchen is open plan to the living room which boasts solid wooden floors and includes integrated appliances including a dishwasher & a washing machine. This large open plan benefits from bi folding doors onto a secluded private courtyard garden. Both bedrooms are double sized, and the family bathroom boasts a matching three piece suite a shower attachment over the bath. There is also a separate wet room. There are walnut doors throughout and wiring for Sky TV/aerial points in the living room/kitchen and both bedrooms.<br>This apartment being only five years old, is still under a 10 year building guarantee...",
+      "location": "Crofton Road Orpington BR6",
+      "picture": "../public/properties/prop2.png",
+      "interior": [
+        "../public/prop2/1.jpeg",
+        "../public/prop2/2.jpeg",
+        "../public/prop2/3.jpeg",
+        "../public/prop2/4.jpeg",
+        "../public/prop2/5.jpeg",
+        "../public/prop2/6.jpeg"
+      ],
+      "floorplan": "../public/floorplan/fp2.png",
+      "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.4730795098512!2d-0.3051922479394044!3d51.50453627459708!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8a00baf21de75%3A0x52963a5addd52a99!2sLondon%2C%20UK!5e0!3m2!1sen!2slk!4v1704828790579!5m2!1sen!2slk",
+      "added": {
+        "month": "September",
+        "day": 14,
+        "year": 2022
+      }
+    },
+    {
+      "id": "prop3",
+      "type": "House",
+      "bedrooms": 1,
+      "price": 275000,
+      "tenure": "Leasehold",
+      "description": "Charming one-bedroom apartment located in the heart of the city. The property features a spacious living room, a well-equipped kitchen, and a modern bathroom. With large windows, the apartment is filled with natural light. Conveniently situated near public transportation, shopping centers, and trendy cafes.",
+      "location": "City Center, Orpington BR5",
+      "picture": "../public/properties/prop3.png",
+      "interior": [
+        "../public/prop3/1.jpeg",
+        "../public/prop3/2.jpeg",
+        "../public/prop3/3.jpeg",
+        "../public/prop3/4.jpeg",
+        "../public/prop3/5.jpeg",
+        "../public/prop3/6.jpeg"
+      ],
+      "floorplan": "../public/floorplan/fp3.png",
+      "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4967.103029394318!2d-0.306114927739019!3d51.50309710137485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8a00baf21de75%3A0x52963a5addd52a99!2sLondon%2C%20UK!5e0!3m2!1sen!2slk!4v1704828883576!5m2!1sen!2slk",
+      "added": {
+        "month": "November",
+        "day": 5,
+        "year": 2022
+      }
+    },
+    {
+      "id": "prop4",
+      "type": "Flat",
+      "bedrooms": 4,
+      "price": 950000,
+      "tenure": "Freehold",
+      "description": "Elegant four-bedroom detached house with a spacious garden and private driveway. The property offers a bright and airy atmosphere, featuring a large living room, modern kitchen, and a master bedroom with an ensuite bathroom. Close proximity to reputable schools, parks, and local amenities.",
+      "location": "Oak Avenue, Orpington NW1",
+      "picture": "../public/properties/prop4.png",
+      "interior": [
+        "../public/prop4/1.jpeg",
+        "../public/prop4/2.jpeg",
+        "../public/prop4/3.jpeg",
+        "../public/prop4/4.jpeg",
+        "../public/prop4/5.jpeg",
+        "../public/prop4/6.jpeg"
+      ],
+      "floorplan": "../public/floorplan/fp4.png",
+      "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d39751.64612863168!2d-0.3417346595380929!3d51.486097394740895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8a00baf21de75%3A0x52963a5addd52a99!2sLondon%2C%20UK!5e0!3m2!1sen!2slk!4v1704828937947!5m2!1sen!2slk",
+      "added": {
+        "month": "December",
+        "day": 8,
+        "year": 2022
+      }
+    },
+    {
+      "id": "prop5",
+      "type": "House",
+      "bedrooms": 3,
+      "price": 550000,
+      "tenure": "Freehold",
+      "description": "Well-maintained three-bedroom townhouse featuring a modern kitchen, a cozy living area, and a private patio. The property is within walking distance to public transport, schools, and parks. Ideal for families seeking a comfortable and conveniently located home.",
+      "location": "Maple Street, Orpington NW3",
+      "picture": "../public/properties/prop5.png",
+      "interior": [
+        "../public/prop5/1.jpeg",
+        "../public/prop5/2.jpeg",
+        "../public/prop5/3.jpeg",
+        "../public/prop5/4.jpeg",
+        "../public/prop5/5.jpeg",
+        "../public/prop5/6.jpeg"
+      ],
+      "floorplan": "../public/floorplan/fp5.png",
+      "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d39734.87337055409!2d-0.529875528678718!3d51.50533431199331!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8a00baf21de75%3A0x52963a5addd52a99!2sLondon%2C%20UK!5e0!3m2!1sen!2slk!4v1704828965735!5m2!1sen!2slk",
+      "added": {
+        "month": "January",
+        "day": 15,
+        "year": 2023
+      }
+    },
+    {
+      "id": "prop6",
+      "type": "Flat",
+      "bedrooms": 1,
+      "price": 200000,
+      "tenure": "Leasehold",
+      "description": "Stylish studio apartment in a newly developed complex. The open-plan design maximizes space, and the unit is equipped with modern appliances. Ideal for singles or couples looking for a contemporary urban living experience. Close to public transportation and vibrant city life.",
+      "location": "High Street, Orpington BR6",
+      "picture": "../public/properties/prop6.png",
+      "interior": [
+        "../public/prop6/1.jpeg",
+        "../public/prop6/2.jpeg",
+        "../public/prop6/3.jpeg",
+        "../public/prop6/4.jpeg",
+        "../public/prop6/5.jpeg",
+        "../public/prop6/6.jpeg"
+      ],
+      "floorplan": "../public/floorplan/fp6.png",
+      "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d39730.77375848962!2d-0.6581065772627023!3d51.51003543477568!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8a00baf21de75%3A0x52963a5addd52a99!2sLondon%2C%20UK!5e0!3m2!1sen!2slk!4v1704828991742!5m2!1sen!2slk",
+      "added": {
+        "month": "February",
+        "day": 22,
+        "year": 2023
+      }
+    },
+    {
+      "id": "prop7",
+      "type": "House",
+      "bedrooms": 2,
+      "price": 475000,
+      "tenure": "Freehold",
+      "description": "Quaint two-bedroom bungalow with a spacious garden and a charming front porch. The property features a cozy living room, a well-appointed kitchen, and a modern bathroom. Located in a peaceful neighborhood, offering a retreat-like atmosphere.",
+      "location": "Elm Lane, Orpington BR2",
+      "picture": "../public/properties/prop7.png",
+      "interior": [
+        "../public/prop7/1.jpeg",
+        "../public/prop7/2.jpeg",
+        "../public/prop7/3.jpeg",
+        "../public/prop7/4.jpeg",
+        "../public/prop7/5.jpeg",
+        "../public/prop7/6.jpeg"
+      ],
+      "floorplan": "../public/floorplan/fp7.png",
+      "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d39682.72162503826!2d-1.2084736718284048!3d51.56511512011739!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8a00baf21de75%3A0x52963a5addd52a99!2sLondon%2C%20UK!5e0!3m2!1sen!2slk!4v1704829064216!5m2!1sen!2slk",
+      "added": {
+        "month": "March",
+        "day": 10,
+        "year": 2023
+      }
+    }
+  ]
+}
