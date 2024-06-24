@@ -11,10 +11,9 @@ import "react-tabs/style/react-tabs.css";
 import ModalTabs from "./modalTabs";
 import { useModal } from "./modalFunction";
 import { useFavorites } from "./favoritesFunction";
-import "../styles/cards.css";
-import "../styles/modal.css";
+import "../styles/browse.css";
 
-export const Cards = () => {
+export const Property = () => {
   const { favorites, addToFavorites, removeFromFavorites, clearFavorites } =
     useFavorites();
   const { isModalOpen, openModal, closeModal, selectedProperty } = useModal();
@@ -125,4 +124,4 @@ export const Cards = () => {
   );
 };
 
-export default Cards;
+export default Property;

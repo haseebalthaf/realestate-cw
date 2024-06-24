@@ -4,7 +4,7 @@ import NumberPicker from "react-widgets/NumberPicker";
 import DatePicker from "react-widgets/DatePicker";
 import { BsSearch } from "react-icons/bs";
 import "react-widgets/styles.css";
-import "../styles/searchbar.css";
+import "../styles/browse.css";
 
 const SearchBar = () => {
   return (

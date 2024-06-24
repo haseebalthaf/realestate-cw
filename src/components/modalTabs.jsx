@@ -2,7 +2,7 @@
 import { useState } from "react";
 import { Tabs, Tab } from "react-bootstrap";
 import Carousel from "react-bootstrap/Carousel";
-import "../styles/modalTabs.css";
+import "../styles/browse.css";
 
 function ModalTabs({ selectedProperty }) {
   const [activeTab, setActiveTab] = useState("desc");

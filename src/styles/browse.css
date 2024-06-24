@@ -1,0 +1,170 @@
+/* searchbar.jsx */
+/* Styles for the form container */
+form {
+  padding: 1rem;
+  margin: 1rem;
+  background: #f1f1f1;
+  border-radius: 1rem;
+}
+
+/* Styles for the search button */
+.searchBtn {
+  border: none;
+  background: none;
+  padding: 0.5rem;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  transition: 0.5s;
+  margin: 0.25rem;
+  border: 1px solid black;
+}
+
+/* Styles on hover effect for the search button */
+.searchBtn:hover {
+  background: #c2c2c2;
+  transition: 0.5s;
+}
+
+/* Property.jsx */
+/* Styles for the properties container */
+.propertiesContainer {
+  padding: 1rem;
+  margin: 1rem;
+  background: #f1f1f1;
+  border-radius: 1rem;
+}
+
+/* Styles for the favorites container */
+.favoritesContainer {
+  padding: 1rem;
+  margin: 1rem;
+  background: #f1f1f1;
+  border-radius: 1rem;
+}
+
+/* Removing list style for the list item in favorites container */
+ul li {
+  list-style: none;
+}
+
+/* Styles for the clear list button in favorites container */
+.clearListBtn {
+  border: none;
+  background: none;
+  padding: 0.5rem;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  transition: 0.5s;
+  margin: 0.25rem;
+  border: 1px solid black;
+}
+
+/* Styles on hover effect for the clear list button */
+.clearListBtn:hover {
+  background: #c2c2c2;
+  transition: 0.5s;
+}
+
+/* --------- THE CLASSES BELOW APPLY FOR BOTH LIST OF PROPERTIES & LIST OF FAVORITES --------- */
+/* Styles for the cards container */
+.cardsContainer {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background-color: white;
+  align-items: center;
+  margin: 0.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid black;
+}
+
+/* Styles for the picture inside the cards container */
+.propertyPicture {
+  height: auto;
+  width: 24rem;
+  margin: 1rem;
+  border-radius: 0.5rem;
+}
+
+/* Styles for the buttons inside the cards container */
+.cardBtns {
+  border: none;
+  background: none;
+  padding: 0.5rem;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  transition: 0.5s;
+  margin: 0.25rem;
+  border: 1px solid black;
+}
+
+/* Styles on hover effect for the card buttons */
+.cardBtns:hover {
+  background: #c2c2c2;
+  transition: 0.5s;
+}
+
+/* property.jsx */
+/* Styles for the modal container */
+.modalContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Styles for the content inside the modal container */
+.modalContent {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  max-width: 800px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Styles for the button inside the modal */
+.modalContent button {
+  border: none;
+  background: none;
+  padding: 0.5rem;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  transition: 0.5s;
+  margin: 0.25rem;
+  border: 1px solid black;
+}
+
+/* Styles on hover effect for the button */
+.modalContent button:hover {
+  background: #c2c2c2;
+  transition: 0.5s;
+}
+
+/* ModalTabs.jsx */
+/* Organizing the buttons on the modal navigation tab */
+.modalTabsContainer {
+  display: flex;
+  justify-content: center;
+  gap: 10px; /* Adjust the value to control the space between buttons */
+  margin-top: 10px;
+}
+
+/* Floorplan image resizing inside the floorplan */
+.floorPlan {
+  height: 300px;
+  width: 300px;
+}
+
+/* Interior pictures resizing inside the interior tab */
+.intPic {
+  height: 150px;
+  width: 250px;
+  padding-left: 5px;
+}
