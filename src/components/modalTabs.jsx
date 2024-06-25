@@ -1,14 +1,25 @@
 /* eslint-disable react/prop-types */
 import { useState } from "react";
 import { Tabs, Tab } from "react-bootstrap";
-import Carousel from "react-bootstrap/Carousel";
-import "../styles/browse.css";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import "../styles/property.css";
 
 function ModalTabs({ selectedProperty }) {
   const [activeTab, setActiveTab] = useState("desc");
 
   const handleTabSelect = (key) => {
     setActiveTab(key);
+  };
+
+  const slickSettings = {
+    dots: true,
+    arrows: false,
+    infinite: true,
+    speed: 1500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
   };
 
   return (
@@ -28,7 +39,7 @@ function ModalTabs({ selectedProperty }) {
         {activeTab === "fPlan" && selectedProperty && (
           <div>
             <img
-              className="floorPlan"
+              className="floorplan"
               src={selectedProperty.floorplan}
               alt="Floorplan"
             />
@@ -49,28 +60,22 @@ function ModalTabs({ selectedProperty }) {
           </div>
         )}
       </Tab>
-      <Tab eventKey="intPic" title="Interior">
-        {activeTab === "intPic" &&
-          selectedProperty &&
-          selectedProperty.interior &&
-          selectedProperty.interior.length > 0 && (
-            <div>
-              <Carousel className="carousel" interval={null} controls={false}>
-                <Carousel.Item className="carouselItem">
-                  <div className="intPicCarousel">
-                    {selectedProperty.interior.map((imagePath, index) => (
-                      <img
-                        key={index}
-                        className="intPic"
-                        src={imagePath}
-                        alt={`Interior ${index + 1}`}
-                      />
-                    ))}
-                  </div>
-                </Carousel.Item>
-              </Carousel>
-            </div>
-          )}
+      <Tab eventKey="interior" title="Interior">
+        {activeTab === "interior" && selectedProperty && (
+          <div className="slideshow">
+            <Slider {...slickSettings} className="slick-slider-custom">
+              {selectedProperty.interior.map((pic, index) => (
+                <div key={index}>
+                  <img
+                    className="interior"
+                    src={pic}
+                    alt={`Slide ${index}`}
+                  />
+                </div>
+              ))}
+            </Slider>
+          </div>
+        )}
       </Tab>
     </Tabs>
   );

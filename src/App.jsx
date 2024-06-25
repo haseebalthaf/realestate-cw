@@ -2,7 +2,8 @@ import { Route, Routes } from "react-router-dom";
 import { NavBar } from "./components/navigation-bar/navigationBar";
 import { Footer } from "./components/footer/footer";
 import Home from "./pages/page-index";
-import Browse from "./pages/page-browse";
+import Listings from "./pages/page-properties";
+import Search from "./pages/page-search";
 
 function App() {
   return (
@@ -10,7 +11,8 @@ function App() {
       <NavBar />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/browse" element={<Browse />} />
+        <Route path="/list" element={<Listings />} />
+        <Route path="/search" element={<Search />} />
       </Routes>
       <Footer />
     </div>

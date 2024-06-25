@@ -3,8 +3,8 @@
 
 /* Fade in animation */
 @keyframes fadeIn {
-  25% {
-    opacity: 0.25;
+  0% {
+    opacity: 0;
   }
   100% {
     opacity: 1;
@@ -13,7 +13,7 @@
 
 /* Main styles for the website body */
 * {
-  animation: fadeIn 0.5s;
+  animation: fadeIn 0.8s;
   font-family: "Poppins";
   padding: 0;
   margin: 0;

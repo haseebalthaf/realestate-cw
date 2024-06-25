@@ -1,31 +1,4 @@
-/* searchbar.jsx */
-/* Styles for the form container */
-form {
-  padding: 1rem;
-  margin: 1rem;
-  background: #f1f1f1;
-  border-radius: 1rem;
-}
-
-/* Styles for the search button */
-.searchBtn {
-  border: none;
-  background: none;
-  padding: 0.5rem;
-  cursor: pointer;
-  border-radius: 0.5rem;
-  transition: 0.5s;
-  margin: 0.25rem;
-  border: 1px solid black;
-}
-
-/* Styles on hover effect for the search button */
-.searchBtn:hover {
-  background: #c2c2c2;
-  transition: 0.5s;
-}
-
-/* Property.jsx */
+/* property.jsx */
 /* Styles for the properties container */
 .propertiesContainer {
   padding: 1rem;
@@ -152,19 +125,29 @@ ul li {
 .modalTabsContainer {
   display: flex;
   justify-content: center;
-  gap: 10px; /* Adjust the value to control the space between buttons */
+  gap: 10px;
   margin-top: 10px;
 }
 
 /* Floorplan image resizing inside the floorplan */
-.floorPlan {
+.floorplan {
   height: 300px;
   width: 300px;
 }
 
+/* Slide show container */
+.slideshow {
+  margin: 40px;
+}
+.slick-dots li button:before {
+  color: bl !important;
+}
+
 /* Interior pictures resizing inside the interior tab */
-.intPic {
-  height: 150px;
-  width: 250px;
-  padding-left: 5px;
+.interior {
+  height: auto;
+  width: 500px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }

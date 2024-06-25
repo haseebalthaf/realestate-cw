@@ -1,0 +1,26 @@
+/* searchbar.jsx */
+/* Styles for the form container */
+form {
+  padding: 1rem;
+  margin: 1rem;
+  background: #f1f1f1;
+  border-radius: 1rem;
+}
+
+/* Styles for the search button */
+.searchBtn {
+  border: none;
+  background: none;
+  padding: 0.5rem;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  transition: 0.5s;
+  margin: 0.25rem;
+  border: 1px solid black;
+}
+
+/* Styles on hover effect for the search button */
+.searchBtn:hover {
+  background: #c2c2c2;
+  transition: 0.5s;
+}

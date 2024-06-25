@@ -1,17 +1,15 @@
 import { windowTitle } from "../components/documentTitle";
 import SearchBar from "../components/searchBar"
-import Property from "../components/property";
 import "../styles/index.css";
 
-const Browse = () => {
-  windowTitle("Properties | Browse");
+const Search = () => {
+  windowTitle("Properties | Search");
   return (
     <>
       <SearchBar />
-      <Property />
       <br />
     </>
   );
 };
 
-export default Browse;
+export default Search;

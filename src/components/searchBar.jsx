@@ -4,7 +4,7 @@ import NumberPicker from "react-widgets/NumberPicker";
 import DatePicker from "react-widgets/DatePicker";
 import { BsSearch } from "react-icons/bs";
 import "react-widgets/styles.css";
-import "../styles/browse.css";
+import "../styles/search.css";
 
 const SearchBar = () => {
   return (
@@ -22,7 +22,6 @@ const SearchBar = () => {
           style={{ paddingTop: "0.25rem" }}
           hideCaret
           hideEmptyPopup
-          // data={[]}
           placeholder="Click to type here..."
         />
 
