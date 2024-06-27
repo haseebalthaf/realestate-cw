@@ -1,5 +1,5 @@
 import { windowTitle } from "../components/documentTitle";
-import SearchBar from "../components/searchBar"
+import SearchBar from "../components/searchBar";
 import "../styles/index.css";
 
 const Search = () => {

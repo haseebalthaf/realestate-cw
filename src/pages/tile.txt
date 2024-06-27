@@ -1,0 +1,95 @@
+  // <form onSubmit={handleFormSubmit}>
+    //   {/* Search bar */}
+    //   <h1>
+    //     <BsSearch style={{ paddingRight: "1rem" }} />
+    //     Search Filter
+    //   </h1>
+
+    //   {/* Postal Code */}
+    //   <div style={{ padding: "1rem" }}>
+    //     <label>Postal code of the area</label>
+    //     <Combobox
+    //       style={{ paddingTop: "0.25rem" }}
+    //       hideCaret
+    //       hideEmptyPopup
+    //       placeholder="Click to type here..."
+    //       value={location}
+    //       onChange={(value) => setLocation(value)}
+    //     />
+
+    //     <hr style={{ margin: "1rem" }} />
+
+    //     <div style={{ display: "flex", marginTop: "1rem" }}>
+    //       {/* Type of Property */}
+    //       <div style={{ marginRight: "1rem" }}>
+    //         <label>Type of Property</label>
+    //         <DropdownList
+    //           style={{ paddingTop: "0.25rem" }}
+    //           defaultValue="Any"
+    //           Properties={["Any", "Flat", "House"]}
+    //           value={propertyType}
+    //           onChange={(value) => setPropertyType(value)}
+    //         />
+    //       </div>
+
+    //       {/* Price range */}
+    //       <div style={{ marginRight: "1rem" }}>
+    //         <label>Price (£)</label>
+    //         <NumberPicker
+    //           style={{ paddingTop: "0.25rem" }}
+    //           defaultValue={200000}
+    //           value={minPrice}
+    //           onChange={(value) => setMinPrice(value)}
+    //         />
+    //         <NumberPicker
+    //           style={{ paddingTop: "0.25rem" }}
+    //           defaultValue={950000}
+    //           value={maxPrice}
+    //           onChange={(value) => setMaxPrice(value)}
+    //         />
+    //       </div>
+
+    //       {/* Bedrooms */}
+    //       <div style={{ marginRight: "1rem" }}>
+    //         <label>Number of Bedrooms</label>
+    //         <NumberPicker
+    //           style={{ paddingTop: "0.25rem" }}
+    //           defaultValue="All"
+    //           value={bedrooms}
+    //           onChange={(value) => setBedrooms(value)}
+    //         />
+    //       </div>
+
+    //       {/* Date range */}
+    //       <div style={{ marginRight: "1rem" }}>
+    //         <label>Date Added</label>
+    //         <div style={{ display: "flex" }}>
+    //           <div style={{ marginRight: "0.5rem" }}>
+    //             <DatePicker
+    //               style={{ paddingTop: "0.25rem" }}
+    //               value={dateFrom}
+    //               onChange={(value) => setDateFrom(value)}
+    //               valueFormat={{ dateStyle: "medium" }}
+    //             />
+    //             <label style={{ color: "#909090" }}>From</label>
+    //           </div>
+    //           <div>
+    //             <DatePicker
+    //               style={{ paddingTop: "0.25rem" }}
+    //               value={dateTo}
+    //               onChange={(value) => setDateTo(value)}
+    //               valueFormat={{ dateStyle: "medium" }}
+    //             />
+    //             <label style={{ color: "#909090" }}>To</label>
+    //           </div>
+    //         </div>
+    //       </div>
+    //     </div>
+    //   </div>
+
+    //   {/* Search button */}
+    //   <button className="searchBtn" type="submit">
+    //     <BsSearch style={{ paddingRight: "1rem" }} />
+    //     Search
+    //   </button>
+    // </form>

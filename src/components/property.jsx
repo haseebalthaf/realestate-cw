@@ -32,8 +32,8 @@ export const Property = () => {
                 {property.location}
               </h2>
               <div style={{ margin: "1rem", textAlign: "center" }}>
-                <p>Type: {property.type}</p>
-                <p>Price: £{property.price}</p>
+                <p><b>Type:</b> {property.type}</p>
+                <p><b>Price:</b> £{property.price}</p>
               </div>
               <div>
                 <button
