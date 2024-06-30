@@ -13,14 +13,10 @@ export const NavBar = () => {
             Home
           </NavLink>
         </li>
+
         <li>
-          <NavLink className="navItem" to="/list">
-            Listings
-          </NavLink>
-        </li>
-        <li>
-          <NavLink className="navItem" to="/search">
-            Search
+          <NavLink className="navItem" to="/browse">
+            Browse
           </NavLink>
         </li>
       </ul>
