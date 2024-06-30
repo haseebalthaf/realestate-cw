@@ -1,12 +1,12 @@
 import { windowTitle } from "../components/documentTitle";
-import Search from "../components/search";
+import PropertyFilter from "../components/propertyFilter";
 import "../styles/index.css";
 
 const Browse = () => {
   windowTitle("Properties | Browse");
   return (
     <>
-      <Search />
+      <PropertyFilter />
       <br />
     </>
   );

@@ -17,7 +17,7 @@ import ModalTabs from "./modalTabs";
 import { useModal } from "./modalFunction";
 import { useFavorites } from "./favoritesFunction";
 
-const Search = () => {
+const PropertyFilter = () => {
   const { favorites, addToFavorites, removeFromFavorites, clearFavorites } =
     useFavorites();
   const { isModalOpen, openModal, closeModal, selectedProperty } = useModal();
@@ -90,6 +90,11 @@ const Search = () => {
         price: p.price,
         description: p.description,
         type: p.type,
+        added: p.added,
+        floorplan: p.floorplan,
+        url: p.url,
+        interior: p.interior,
+        bedrooms: p.bedrooms,
       }))
     );
   };
@@ -221,6 +226,9 @@ const Search = () => {
                   <p>
                     <b>Price:</b> £{property.price}
                   </p>
+                  <p>
+                    <b>Bedrooms:</b> {property.bedrooms}
+                  </p>
                 </div>
                 <div>
                   <button
@@ -273,10 +281,11 @@ const Search = () => {
                 {favorite.location}
               </h2>
               <div style={{ margin: "1rem", textAlign: "center" }}>
-                <p>Type: {favorite.type}</p>
-                <p>Price: £{favorite.price}</p>
+                <p><b>Type:</b> {favorite.type}</p>
+                <p><b>Price:</b> £{favorite.price}</p>
+                <p><b>Bedrooms:</b> {favorite.bedrooms}</p>
               </div>
-              <div style={{paddingBottom: "20px"}}>
+              <div style={{ paddingBottom: "20px" }}>
                 <button
                   className="cardBtns"
                   onClick={() => removeFromFavorites(favorite.id)}
@@ -310,4 +319,4 @@ const Search = () => {
   );
 };
 
-export default Search;
+export default PropertyFilter;

@@ -66,11 +66,7 @@ function ModalTabs({ selectedProperty }) {
             <Slider {...slickSettings} className="slick-slider-custom">
               {selectedProperty.interior.map((pic, index) => (
                 <div key={index}>
-                  <img
-                    className="interior"
-                    src={pic}
-                    alt={`Slide ${index}`}
-                  />
+                  <img className="interior" src={pic} alt={`Slide ${index}`} />
                 </div>
               ))}
             </Slider>
