@@ -13,7 +13,6 @@ export const NavBar = () => {
             Home
           </NavLink>
         </li>
-
         <li>
           <NavLink className="navItem" to="/browse">
             Browse

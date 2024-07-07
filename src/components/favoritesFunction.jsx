@@ -11,7 +11,7 @@ export const useFavorites = () => {
     if (!isAlreadyAdded) {
       setFavorites((prevFavorites) => [...prevFavorites, property]);
     } else {
-      console.log("Cannot add the same property more than once.");
+      window.alert("Already added to favorites!");
     }
   };
 

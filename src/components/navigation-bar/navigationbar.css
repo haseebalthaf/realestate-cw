@@ -30,6 +30,7 @@ nav ul li {
   list-style: none;
 }
 
+/* List Item */
 nav ul li a {
   display: block;
   font-size: 1rem;
@@ -42,12 +43,14 @@ nav ul li a {
   transition: 0.5s;
 }
 
+/* List Item hover effect */
 nav ul li a:hover {
   transition: 0.5s;
   background-color: white;
   color: black;
 }
 
+/* Style for active tab */
 .active {
   border: 1px solid white;
 }

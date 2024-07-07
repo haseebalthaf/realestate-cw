@@ -10,7 +10,7 @@ import {
   BsHouseCheck,
   BsHouseDash,
 } from "react-icons/bs";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 import Properties from "../../public/properties.json";
 import "react-tabs/style/react-tabs.css";
 import ModalTabs from "./modalTabs";
@@ -28,10 +28,64 @@ const PropertyFilter = () => {
   const [maxBedrooms, setMaxBedrooms] = useState("");
   const [minPrice, setMinPrice] = useState("");
   const [maxPrice, setMaxPrice] = useState("");
+  const [startDate, setStartDate] = useState("");
+  const [endDate, setEndDate] = useState("");
+
+  const filterProperties = useCallback(() => {
+    const filtered = Properties.properties.filter((property) => {
+      const matchesLocation = property.location
+        .toLowerCase()
+        .includes(location);
+      const matchesType =
+        selectedType === "any" || property.type.toLowerCase() === selectedType;
+      const matchesMinBedrooms =
+        minBedrooms === "" || property.bedrooms >= parseInt(minBedrooms);
+      const matchesMaxBedrooms =
+        maxBedrooms === "" || property.bedrooms <= parseInt(maxBedrooms);
+      const matchesMinPrice =
+        minPrice === "" || property.price >= parseInt(minPrice);
+      const matchesMaxPrice =
+        maxPrice === "" || property.price <= parseInt(maxPrice);
+
+      const propertyDate = new Date(
+        `${property.added.year}-${property.added.month}-${property.added.day}`
+      );
+      const matchesStartDate =
+        startDate === "" || propertyDate >= new Date(startDate);
+      const matchesEndDate =
+        endDate === "" || propertyDate <= new Date(endDate);
+
+      return (
+        matchesLocation &&
+        matchesType &&
+        matchesMinBedrooms &&
+        matchesMaxBedrooms &&
+        matchesMinPrice &&
+        matchesMaxPrice &&
+        matchesStartDate &&
+        matchesEndDate
+      );
+    });
+    setFilteredLocations(
+      filtered.map((p) => ({
+        id: p.id,
+        location: p.location,
+        picture: p.picture,
+        price: p.price,
+        description: p.description,
+        type: p.type,
+        added: p.added,
+        floorplan: p.floorplan,
+        url: p.url,
+        interior: p.interior,
+        bedrooms: p.bedrooms,
+      }))
+    );
+  }, [location, selectedType, minBedrooms, maxBedrooms, minPrice, maxPrice, startDate, endDate]);
 
   useEffect(() => {
     filterProperties();
-  }, [location, selectedType, minBedrooms, maxBedrooms, minPrice, maxPrice]);
+  }, [filterProperties]);
 
   const handleLocationChange = (event) => {
     setLocation(event.target.value.toLowerCase());
@@ -57,46 +111,12 @@ const PropertyFilter = () => {
     setMaxPrice(event.target.value);
   };
 
-  const filterProperties = () => {
-    const filtered = Properties.properties.filter((property) => {
-      const matchesLocation = property.location
-        .toLowerCase()
-        .includes(location);
-      const matchesType =
-        selectedType === "any" || property.type.toLowerCase() === selectedType;
-      const matchesMinBedrooms =
-        minBedrooms === "" || property.bedrooms >= parseInt(minBedrooms);
-      const matchesMaxBedrooms =
-        maxBedrooms === "" || property.bedrooms <= parseInt(maxBedrooms);
-      const matchesMinPrice =
-        minPrice === "" || property.price >= parseInt(minPrice);
-      const matchesMaxPrice =
-        maxPrice === "" || property.price <= parseInt(maxPrice);
+  const handleStartDateChange = (event) => {
+    setStartDate(event.target.value);
+  };
 
-      return (
-        matchesLocation &&
-        matchesType &&
-        matchesMinBedrooms &&
-        matchesMaxBedrooms &&
-        matchesMinPrice &&
-        matchesMaxPrice
-      );
-    });
-    setFilteredLocations(
-      filtered.map((p) => ({
-        id: p.id,
-        location: p.location,
-        picture: p.picture,
-        price: p.price,
-        description: p.description,
-        type: p.type,
-        added: p.added,
-        floorplan: p.floorplan,
-        url: p.url,
-        interior: p.interior,
-        bedrooms: p.bedrooms,
-      }))
-    );
+  const handleEndDateChange = (event) => {
+    setEndDate(event.target.value);
   };
 
   return (
@@ -171,6 +191,34 @@ const PropertyFilter = () => {
                 placeholder="Maximum price..."
                 value={maxPrice}
                 onChange={handleMaxPriceChange}
+              />
+            </div>
+          </div>
+          <div style={{ display: "flex", gap: "30px" }}>
+            <div>
+              <label className="inputLabel">
+                Start Date
+                <br />
+              </label>
+              <input
+                className="searchInput"
+                style={{ marginTop: "10px", marginBottom: "20px" }}
+                type="date"
+                value={startDate}
+                onChange={handleStartDateChange}
+              />
+            </div>
+            <div>
+              <label className="inputLabel">
+                End Date
+                <br />
+              </label>
+              <input
+                className="searchInput"
+                style={{ marginTop: "10px", marginBottom: "20px" }}
+                type="date"
+                value={endDate}
+                onChange={handleEndDateChange}
               />
             </div>
           </div>
@@ -281,9 +329,15 @@ const PropertyFilter = () => {
                 {favorite.location}
               </h2>
               <div style={{ margin: "1rem", textAlign: "center" }}>
-                <p><b>Type:</b> {favorite.type}</p>
-                <p><b>Price:</b> £{favorite.price}</p>
-                <p><b>Bedrooms:</b> {favorite.bedrooms}</p>
+                <p>
+                  <b>Type:</b> {favorite.type}
+                </p>
+                <p>
+                  <b>Price:</b> £{favorite.price}
+                </p>
+                <p>
+                  <b>Bedrooms:</b> {favorite.bedrooms}
+                </p>
               </div>
               <div style={{ paddingBottom: "20px" }}>
                 <button
